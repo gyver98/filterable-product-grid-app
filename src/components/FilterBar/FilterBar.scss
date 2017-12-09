@@ -1,0 +1,18 @@
+.filter-container {
+  color: #000;
+  background-color: rgba(222,241,244,0.8);
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.filter {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.filter__field {
+  align-self: center;
+}
