@@ -2,6 +2,9 @@
 
 Filterable product grid application.
 
+[Live demo](http://filterable-product-grid.surge.sh/)
+
+
 ## Table of contents
 * [Getting started](#user-content-getting-started)
 * [Tech stacks](#user-content-tech-stacks)
