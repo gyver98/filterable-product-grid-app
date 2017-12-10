@@ -31,6 +31,11 @@ Filterable product grid application.
 
 ![structure](https://github.com/gyver98/blog-images/blob/master/filterable-product-grid/structure.png?raw=true)
 
+## Responsive layout
+
+![responsive](https://github.com/gyver98/blog-images/blob/master/filterable-product-grid/responsive.png?raw=true)
+
+
 ## Features
 
 - [x] Webpack 3 (development and production config)
