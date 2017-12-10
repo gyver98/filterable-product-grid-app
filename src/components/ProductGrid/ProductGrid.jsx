@@ -2,31 +2,44 @@ import React, { Component } from 'react';
 import './ProductGrid.scss';
 import ProductCard from './ProductCard';
 
-class ProductGrid extends Component {
+const images = require.context('../../assets/images', true);
 
+class ProductGrid extends Component {
   render() {
-    const filterSize = this.props.filterSize;
+    const { filterSize } = this.props;
     const cards = [];
 
     this.props.products.forEach((product) => {
+      const imageSrc = images(`./${product.productImage}`);
+      let badgeClassName = "";
+      if (product.isSale) {
+        badgeClassName = "product-badge--sale";
+      } else if (product.isExclusive) {
+        badgeClassName = "product-badge--exclusive";
+      }
       if (product.size.indexOf(filterSize) !== -1) {
-        cards.push(
-          <ProductCard key={product.index} product={product} />
-        )
+        cards.push(<ProductCard
+                      key={product.index}
+                      product={product}
+                      imageSrc={imageSrc}
+                      badgeClassName={badgeClassName}
+                  />);
       } else if (filterSize === '' || filterSize === 'Filter by size') {
-        cards.push(
-          <ProductCard key={product.index} product={product} />
-        )  
+        cards.push(<ProductCard
+                      key={product.index}
+                      product={product}
+                      imageSrc={imageSrc}
+                      badgeClassName={badgeClassName}
+                  />);
       }
     });
-  
-    return(
+
+    return (
       <section className="product-container">
         {cards}
-      </section>  
-    )
+      </section>
+    );
   }
-  
 }
 
 export default ProductGrid;

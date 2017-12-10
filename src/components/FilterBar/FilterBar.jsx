@@ -13,9 +13,10 @@ class FilterBar extends Component {
 
   render() {
     const { products } = this.props;
-    const sizes = products.reduce((prev, curr) => {
-      return [...prev, ...curr.size];
-    }, ['Filter by size']);
+    // get all sizes from products array with init value
+    const sizes = products.reduce((prev, curr) =>
+      [...prev, ...curr.size], ['Filter by size']);
+    // extract unique values
     const uniqueSizes = [...new Set(sizes)];
 
     const sizeOptions = uniqueSizes.map(size => (
@@ -36,11 +37,8 @@ class FilterBar extends Component {
           </form>
         </div>
       </nav>
-    )
+    );
   }
-
 }
 
 export default FilterBar;
-
-

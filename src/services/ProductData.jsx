@@ -2,7 +2,7 @@ const ProductData = {
   // Load Mock Product Data Into localStorage
   init() {
     localStorage.clear();
-    localStorage.setItem('product', JSON.stringify([
+    localStorage.setItem("product", JSON.stringify([
       {
         "index": 0,
         "isSale": true,
@@ -10,7 +10,7 @@ const ProductData = {
         "price": "$18.88",
         "productImage": "product-1.jpg",
         "productName": "Striped shirt",
-        "size": ["XS", "S", "L", "XL"]
+        "size": ["XS", "S", "L", "XL"],
       },
       {
         "index": 1,
@@ -19,7 +19,7 @@ const ProductData = {
         "price": "$25.44",
         "productImage": "product-2.jpg",
         "productName": "Denim shirt",
-        "size": ["XS", "S"]
+        "size": ["XS", "S"],
       },
       {
         "index": 2,
@@ -28,7 +28,7 @@ const ProductData = {
         "price": "$12.93",
         "productImage": "product-3.jpg",
         "productName": "Plain cotton t-shirt",
-        "size": ["S", "M"]
+        "size": ["S", "M"],
       },
       {
         "index": 3,
@@ -37,7 +37,7 @@ const ProductData = {
         "price": "$26.32",
         "productImage": "product-4.jpg",
         "productName": "Plain 3/4 sleeve cotton t-shirt",
-        "size": ["XL"]
+        "size": ["XL"],
       },
       {
         "index": 4,
@@ -46,7 +46,7 @@ const ProductData = {
         "price": "$12.16",
         "productImage": "product-5.jpg",
         "productName": "White dress shirt",
-        "size": ["M", "L"]
+        "size": ["M", "L"],
       },
       {
         "index": 5,
@@ -55,7 +55,7 @@ const ProductData = {
         "price": "$30.27",
         "productImage": "product-6.jpg",
         "productName": "Long Sleeve Skivvy Top",
-        "size": ["XS", "S", "M"]
+        "size": ["XS", "S", "M"],
       },
       {
         "index": 6,
@@ -64,7 +64,7 @@ const ProductData = {
         "price": "$24.26",
         "productImage": "product-7.jpg",
         "productName": "Puffer Vest with Hood",
-        "size": ["M", "L", "XL"]
+        "size": ["M", "L", "XL"],
       },
       {
         "index": 7,
@@ -73,10 +73,10 @@ const ProductData = {
         "price": "$17.73",
         "productImage": "product-8.jpg",
         "productName": "Funnel Neck Swing Top",
-       "size": ["XS", "S", "XL"]
-      }
+        "size": ["XS", "S", "XL"],
+      },
     ]));
-  }
+  },
 };
 
 export default ProductData;

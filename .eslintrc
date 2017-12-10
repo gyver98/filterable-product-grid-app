@@ -1,0 +1,22 @@
+{
+  "parser": "babel-eslint",
+  "rules": {
+    "max-len": [1, 120, 2, {"ignoreComments": true}],
+    "prop-types": [0],
+    "no-unused-vars": 0,
+    "quotes": [0, "single", "avoid-escape"],
+    "quote-props": [0]
+  },
+  "extends": ["airbnb-base"],
+  // fixing issue of Eslint errorring importing jsx without extension
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js",".jsx"]
+      }
+    }
+  },
+  "env": {
+    "browser": true
+  }
+}

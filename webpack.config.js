@@ -19,9 +19,14 @@ let config = {
   module: {
     rules: [
       {
+        test: /\.jsx$/, // all files ending with .jsx
+        loader: ['babel-loader', 'eslint-loader'], // use the babel-loader and eslint loader for all .jsx files
+        exclude: /node_modules/ // exclude searching for files in the node_modules directory
+      },
+      {
         test: /\.js$/, // files ending with .js
         exclude: /node_modules/, // exclude the node_modules directory
-        loader: "babel-loader" // use this (babel-core) loader
+        loaders: ['babel-loader', 'eslint-loader'] // use babel-loader and eslint loader
       },
       {
         test: /\.scss$/, // files ending with .scss
@@ -29,11 +34,6 @@ let config = {
           fallback: 'style-loader',
           use: ['css-loader', 'sass-loader', 'postcss-loader'],
         })),
-      },
-      {
-        test: /\.jsx$/, // all files ending with .jsx
-        loader: 'babel-loader', // use the babel-loader for all .jsx files
-        exclude: /node_modules/ // exclude searching for files in the node_modules directory
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
