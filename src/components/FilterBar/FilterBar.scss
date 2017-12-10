@@ -1,6 +1,9 @@
+$brand-green: rgba(222,241,244,0.8);
+$brand-black: black;
+
 .filter-container {
-  color: #000;
-  background-color: rgba(222,241,244,0.8);
+  color: $brand-black;
+  background-color: $brand-green;
   padding: 20px 0;
   display: flex;
   justify-content: center;
