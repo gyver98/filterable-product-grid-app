@@ -7,6 +7,7 @@ Filterable product grid application.
 * [Tech stacks](#user-content-tech-stacks)
 * [React component structure](#user-content-react-component-structure)
 * [Features](#user-content-features)
+* [Responsive layout](#user-content-responsive-layout)
 * [Git clone or download](#user-content-git-clone-or-download)
 * [Setup](#user-content-setup)
 * [npm tasks](#user-content-npm-tasks)
@@ -31,10 +32,6 @@ Filterable product grid application.
 
 ![structure](https://github.com/gyver98/blog-images/blob/master/filterable-product-grid/structure.png?raw=true)
 
-## Responsive layout
-
-![responsive](https://github.com/gyver98/blog-images/blob/master/filterable-product-grid/responsive.png?raw=true)
-
 
 ## Features
 
@@ -45,6 +42,10 @@ Filterable product grid application.
 - [x] Linting (ESlint + airbnb-base) - Lint the JS/JSX with errors and warnings to the terminal ()
 - [x] Move image files into public
 - [x] Minification javascript & css
+
+## Responsive layout
+
+![responsive](https://github.com/gyver98/blog-images/blob/master/filterable-product-grid/responsive.png?raw=true)
 
 ## Git clone or download
 
