@@ -7,7 +7,7 @@ Filterable product grid application.
 * [Tech stacks](#user-content-tech-stacks)
 * [React component structure](#user-content-react-component-structure)
 * [Features](#user-content-features)
-* [Git clone or download](#user-content-Git-clone-or-download)
+* [Git clone or download](#user-content-git-clone-or-download)
 * [Setup](#user-content-setup)
 * [npm tasks](#user-content-npm-tasks)
 * [Running in dev mode](#user-content-running-in-dev-mode)
