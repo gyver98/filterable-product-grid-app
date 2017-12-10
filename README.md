@@ -117,6 +117,13 @@ or
 $ yarn production
 ```
 
+## Accessibility check
+
+Checked accessibility using chrome dev tool (audits) and axe extenstion
+
+![audit](https://github.com/gyver98/blog-images/blob/master/filterable-product-grid/audit.png?raw=true)
+
+
 ## Changelog
 
 #### 0.0.1
