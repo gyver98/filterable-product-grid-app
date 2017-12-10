@@ -3,19 +3,16 @@
 Filterable product grid application.
 
 ## Table of contents
-* [How to use](#user-content-how-to-use)
+* [Getting started](#user-content-getting-started)
+* [Tech stacks](#user-content-tech-stacks)
+* [React component structure](#user-content-react-component-structure)
 * [Features](#user-content-features)
 * [Git clone or download](#user-content-Git-clone-or-download)
 * [Setup](#user-content-setup)
 * [npm tasks](#user-content-npm-tasks)
 * [Running in dev mode](#user-content-running-in-dev-mode)
-* [Running it with webpack dashboard](#user-content-running-it-with-webpack-dashboard)
 * [Build application](#user-content-build-application)
-* [Running test in dev mode](#user-content-running-test-in-dev-mode)
-* [Running test in watch mode](#user-content-running-test-in-watch-mode)
-* [Linting](#user-content-linting)
-* [What it uses](#user-content-what-it-uses)
-* [What is to come](#user-content-what-is-to-come)
+* [Build application in production mode](#user-content-build-application-in-production-mode)
 * [Changelog](#user-content-changelog)
 
 ## Getting started
@@ -37,15 +34,12 @@ Filterable product grid application.
 ## Features
 
 - [x] Webpack 3 (development and production config)
-- [x] Hot Module Replacement
+- [x] Hot loading
 - [x] Babel - Transpile the JS from ES6/7 down to machine optimised ES5
 - [x] SASS with autoprefixing
-- [x] Webpack dashboard - A CLI dashboard for our webpack dev server
-- [x] Linting - Lint the JS with errors and warnings to the terminal
-- [x] WebpackMonitor - Optimization tool for production build
-- [x] Move font/image files into Dist
+- [x] Linting (ESlint + airbnb-base) - Lint the JS/JSX with errors and warnings to the terminal ()
+- [x] Move image files into public
 - [x] Minification javascript & css
-- [x] Unit testing automation with watch mode
 
 ## Git clone or download
 
@@ -116,30 +110,6 @@ or
 ```
 $ yarn production
 ```
-
-
-## Linting
-
-For linting we're using [eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base),
-but some options are overridden to our preferences.
-
-```
-$ npm run lint
-```
-or
-```
-$ yarn lint
-```
-
-## What it uses
-* Webpack + DevServer
-* Babel - ES7
-* SASS
-* Airbnb linting - https://github.com/airbnb/javascript
-* Prettier code formatting
-* DEV/PROD configs
-* Git hooks for linting
-
 
 ## Changelog
 
