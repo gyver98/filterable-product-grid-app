@@ -14,6 +14,7 @@ Filterable product grid application.
 * [Running in dev mode](#user-content-running-in-dev-mode)
 * [Build application](#user-content-build-application)
 * [Build application in production mode](#user-content-build-application-in-production-mode)
+* [Accessibility check](#user-content-accessibility-check)
 * [Changelog](#user-content-changelog)
 
 ## Getting started
