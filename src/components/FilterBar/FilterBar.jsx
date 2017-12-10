@@ -31,6 +31,7 @@ class FilterBar extends Component {
             <select
               className="filter__field"
               onChange={this.handleFilterOptionChange}
+              aria-label="filter by size"
             >
               {sizeOptions}
             </select>

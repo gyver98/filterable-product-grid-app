@@ -3,7 +3,7 @@ import React from 'react';
 const ProductCard = ({ product, imageSrc, badgeClassName }) => (
   <div className="product-card">
     <div className="product-image">
-      <img src={imageSrc} alt="" />
+      <img src={imageSrc} alt={product.productName} />
     </div>
     <div className={`product-badge ${badgeClassName}`}></div>
     <div className="product-info">
